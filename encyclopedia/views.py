@@ -45,3 +45,7 @@ def search(request):
             return render(request, "encyclopedia/search.html", {
                 "recommendation": recommendation
             })
+        
+def new_page(request):
+    if request.method == "GET":
+        return render(request, "encyclopedia/new.html")
